@@ -118,9 +118,10 @@ export default {
   z-index: 99;
 }
 .wrapper {
-  margin-top: 45px;
+  padding-top: 45px;
+  padding-bottom: 60px;
   // height: 100%;
-  height: calc(100vh - 95px);
+  height: 100vh;
   overflow: hidden;   //超出部分隐藏
   background: rgb(242, 242, 242);
 }

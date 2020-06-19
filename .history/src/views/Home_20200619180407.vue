@@ -120,7 +120,7 @@ export default {
 .wrapper {
   margin-top: 45px;
   // height: 100%;
-  height: calc(100vh - 95px);
+  height: 100vh;
   overflow: hidden;   //超出部分隐藏
   background: rgb(242, 242, 242);
 }

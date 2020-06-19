@@ -26,9 +26,9 @@
 
 <script>
 export default {
-  name: "One",
+  name: "Two",
   props: {
-    floor1: {
+    floor2: {
       type: Array
     }
   },

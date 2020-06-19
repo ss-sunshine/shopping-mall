@@ -1,26 +1,20 @@
 <template>
   <div>
     <div class="f-a-j p-tb-1">
-      <div class="num f-color-w f-a-j f14 m-r-05">
-        <slot name="num"></slot>
-      </div>
       <div class="title f16">
         <slot name="title"></slot>
       </div>
     </div>
-    <div class="d-f">
-      <div class="f-1">
-        <div v-for="(item,index) in floor1" :key="index">
-          <img v-if="index===0" :src="item.image" />
-          <img v-if="index===floor1.length-1" :src="item.image" />
+    <van-grid :column-num="2">
+      <van-grid-item v-for="item in hotGoods" :key="item.id">
+        <van-image :src="item.image"/>
+        <div>{{item.name}}</div>
+        <div>
+          <div>{{item.mallPrice}}</div>
+          <div>{{item.price}}</div>
         </div>
-      </div>
-      <div class="f-1">
-        <div v-for="(item,index) in floor1" :key="index">
-          <img v-if="index!==0&&index!==floor1.length-1" :src="item.image" />
-        </div>
-      </div>
-    </div>
+      </van-grid-item>
+    </van-grid>
   </div>
 </template>
 
@@ -28,7 +22,7 @@
 export default {
   name: "One",
   props: {
-    floor1: {
+    hotGoods: {
       type: Array
     }
   },
@@ -44,8 +38,8 @@ export default {
 </script>
 
 <style scoped lang='scss'>
-.f-1{
- font-size: 0;
+.f-1 {
+  font-size: 0;
 }
 .num {
   width: 20px;

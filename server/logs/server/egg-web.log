@@ -877,3 +877,20 @@
 2020-06-18 10:59:51,504 INFO 12976 [egg-mongoose] instance[0] start successfully
 2020-06-18 10:59:51,547 INFO 12976 [egg-watcher:application] watcher start success
 2020-06-18 10:59:51,671 INFO 12976 [egg:core] dump config after ready, 106ms
+2020-06-19 08:45:53,991 INFO 3968 [egg:logger] init all loggers with options: {"dir":"E:\\web前端\\项目练习\\shopping-mall\\server\\logs\\server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-06-19 08:45:54,077 INFO 3968 [egg-multipart] stream mode enable
+2020-06-19 08:45:55,716 INFO 3968 [egg-mongoose] connecting mongodb://127.0.0.1/shoppingMall
+2020-06-19 08:45:57,205 INFO 3968 [egg-static] starting static serve /public/ -> E:\web前端\项目练习\shopping-mall\server\app\public
+2020-06-19 08:45:57,217 INFO 3968 [egg-security] use methodnoallow middleware
+2020-06-19 08:45:57,220 INFO 3968 [egg-security] use noopen middleware
+2020-06-19 08:45:57,229 INFO 3968 [egg-security] use nosniff middleware
+2020-06-19 08:45:57,232 INFO 3968 [egg-security] use xssProtection middleware
+2020-06-19 08:45:57,235 INFO 3968 [egg-security] use xframe middleware
+2020-06-19 08:45:57,237 INFO 3968 [egg-security] use dta middleware
+2020-06-19 08:45:57,238 INFO 3968 [egg-security] compose 6 middlewares into one security middleware
+2020-06-19 08:45:57,331 INFO 3968 [egg:core] dump config after load, 27ms
+2020-06-19 08:45:57,341 INFO 3968 [egg-mongoose] starting...
+2020-06-19 08:45:57,582 INFO 3968 [egg-mongoose] mongodb://127.0.0.1/shoppingMall connected successfully
+2020-06-19 08:45:57,688 INFO 3968 [egg-mongoose] instance[0] start successfully
+2020-06-19 08:45:57,775 INFO 3968 [egg-watcher:application] watcher start success
+2020-06-19 08:45:57,868 INFO 3968 [egg:core] dump config after ready, 41ms

@@ -16,27 +16,7 @@
               <div>{{kind.floor1}}</div>
             </template>
           </one>
-          <two :floor2="floor2">
-            <template v-slot:num>
-              <div>2F</div>
-            </template>
-            <template v-slot:title>
-              <div>{{kind.floor2}}</div>
-            </template>
-          </two>
-          <three :floor3="floor3">
-            <template v-slot:num>
-              <div>3F</div>
-            </template>
-            <template v-slot:title>
-              <div>{{kind.floor3}}</div>
-            </template>
-          </three>
-          <hot :hotGoods="hotGoods">
-            <template v-slot:title>
-              <div>热销商品</div>
-            </template>
-          </hot>
+          <hot :hotGoods="hotGoods"></hot>
       </div>
     </div>
     </div>
@@ -45,8 +25,6 @@
 
 <script>
 import Hot from "../components/home/kind/Hot"
-import Three from "../components/home/kind/Three"
-import Two from "../components/home/kind/Two"
 import One from "../components/home/kind/One"
 import Recommend from "../components/home/Recommend"
 import Ad from "../components/home/Ad"
@@ -63,10 +41,7 @@ export default {
     Classification,
     Ad,
     Recommend,
-    One,
-    Two,
-    Three,
-    Hot
+    One
   },
   data() {
     return {
@@ -76,8 +51,6 @@ export default {
       recommend:[],
       kind:{},
       floor1:[],
-      floor2:[],
-      floor3:[],
       hotGoods:[]
     };
   },
@@ -98,8 +71,6 @@ export default {
         this.recommend = res.data.recommend;
         this.kind = res.data.floorName
         this.floor1 = res.data.floor1
-        this.floor2 = res.data.floor2
-        this.floor3 = res.data.floor3
         this.hotGoods = res.data.hotGoods
       })
       .catch(err => {
@@ -119,8 +90,9 @@ export default {
 }
 .wrapper {
   margin-top: 45px;
+  margin-bottom: 60px;
   // height: 100%;
-  height: calc(100vh - 95px);
+  height: 100vh;
   overflow: hidden;   //超出部分隐藏
   background: rgb(242, 242, 242);
 }

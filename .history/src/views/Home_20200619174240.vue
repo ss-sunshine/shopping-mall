@@ -24,14 +24,6 @@
               <div>{{kind.floor2}}</div>
             </template>
           </two>
-          <three :floor3="floor3">
-            <template v-slot:num>
-              <div>3F</div>
-            </template>
-            <template v-slot:title>
-              <div>{{kind.floor3}}</div>
-            </template>
-          </three>
           <hot :hotGoods="hotGoods">
             <template v-slot:title>
               <div>热销商品</div>
@@ -45,7 +37,6 @@
 
 <script>
 import Hot from "../components/home/kind/Hot"
-import Three from "../components/home/kind/Three"
 import Two from "../components/home/kind/Two"
 import One from "../components/home/kind/One"
 import Recommend from "../components/home/Recommend"
@@ -65,7 +56,6 @@ export default {
     Recommend,
     One,
     Two,
-    Three,
     Hot
   },
   data() {
@@ -77,7 +67,6 @@ export default {
       kind:{},
       floor1:[],
       floor2:[],
-      floor3:[],
       hotGoods:[]
     };
   },
@@ -119,8 +108,9 @@ export default {
 }
 .wrapper {
   margin-top: 45px;
+  margin-bottom: 60px;
   // height: 100%;
-  height: calc(100vh - 95px);
+  height: 100vh;
   overflow: hidden;   //超出部分隐藏
   background: rgb(242, 242, 242);
 }

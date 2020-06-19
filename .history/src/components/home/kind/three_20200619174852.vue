@@ -10,14 +10,14 @@
     </div>
     <div class="d-f">
       <div class="f-1">
-        <div v-for="(item,index) in floor1" :key="index">
+        <div v-for="(item,index) in floor3" :key="index">
           <img v-if="index===0" :src="item.image" />
-          <img v-if="index===floor1.length-1" :src="item.image" />
+          <img v-if="index===1" :src="item.image" />
         </div>
       </div>
       <div class="f-1">
-        <div v-for="(item,index) in floor1" :key="index">
-          <img v-if="index!==0&&index!==floor1.length-1" :src="item.image" />
+        <div v-for="(item,index) in floor3" :key="index">
+          <img v-if="index!==0&&index!==1" :src="item.image" />
         </div>
       </div>
     </div>
@@ -26,9 +26,9 @@
 
 <script>
 export default {
-  name: "One",
+  name: "Two",
   props: {
-    floor1: {
+    floor3: {
       type: Array
     }
   },

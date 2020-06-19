@@ -65,7 +65,6 @@ export default {
     Recommend,
     One,
     Two,
-    Three,
     Hot
   },
   data() {
@@ -77,7 +76,6 @@ export default {
       kind:{},
       floor1:[],
       floor2:[],
-      floor3:[],
       hotGoods:[]
     };
   },
@@ -119,8 +117,9 @@ export default {
 }
 .wrapper {
   margin-top: 45px;
+  margin-bottom: 60px;
   // height: 100%;
-  height: calc(100vh - 95px);
+  height: 100vh;
   overflow: hidden;   //超出部分隐藏
   background: rgb(242, 242, 242);
 }

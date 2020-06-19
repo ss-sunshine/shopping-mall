@@ -9,17 +9,14 @@
       </div>
     </div>
     <div class="d-f">
-      <div class="f-1">
-        <div v-for="(item,index) in floor1" :key="index">
-          <img v-if="index===0" :src="item.image" />
-          <img v-if="index===floor1.length-1" :src="item.image" />
-        </div>
-      </div>
-      <div class="f-1">
-        <div v-for="(item,index) in floor1" :key="index">
-          <img v-if="index!==0&&index!==floor1.length-1" :src="item.image" />
-        </div>
-      </div>
+      <van-grid :column-num="2">
+        <van-grid-item v-for="value in 1" :key="value">
+        </van-grid-item>
+      </van-grid>
+      <van-grid :column-num="2">
+        <van-grid-item v-for="value in 5" :key="value">
+        </van-grid-item>
+      </van-grid>
     </div>
   </div>
 </template>
@@ -44,9 +41,6 @@ export default {
 </script>
 
 <style scoped lang='scss'>
-.f-1{
- font-size: 0;
-}
 .num {
   width: 20px;
   height: 20px;
@@ -55,8 +49,5 @@ export default {
 }
 .title {
   color: rgb(224, 50, 43);
-}
-img {
-  width: 100%;
 }
 </style>

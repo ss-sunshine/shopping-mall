@@ -9,17 +9,15 @@
       </div>
     </div>
     <div class="d-f">
-      <div class="f-1">
         <div v-for="(item,index) in floor1" :key="index">
-          <img v-if="index===0" :src="item.image" />
-          <img v-if="index===floor1.length-1" :src="item.image" />
+          <div class="f-1">
+            <img v-if="index===0" :src="item.image" />
+          <img v-if="index===4" :src="item.image" />
+          </div>
         </div>
-      </div>
-      <div class="f-1">
         <div v-for="(item,index) in floor1" :key="index">
-          <img v-if="index!==0&&index!==floor1.length-1" :src="item.image" />
+          <img v-if="index!==0&&index!==4" :src="item.image" />
         </div>
-      </div>
     </div>
   </div>
 </template>
@@ -44,8 +42,9 @@ export default {
 </script>
 
 <style scoped lang='scss'>
-.f-1{
- font-size: 0;
+*{
+  margin: 0;
+  padding: 0;
 }
 .num {
   width: 20px;

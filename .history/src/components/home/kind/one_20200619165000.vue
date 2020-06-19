@@ -12,12 +12,15 @@
       <div class="f-1">
         <div v-for="(item,index) in floor1" :key="index">
           <img v-if="index===0" :src="item.image" />
-          <img v-if="index===floor1.length-1" :src="item.image" />
         </div>
       </div>
       <div class="f-1">
+        <van-grid>
+          <van-grid-item>
+            </van-grid-item>
+        </van-grid>
         <div v-for="(item,index) in floor1" :key="index">
-          <img v-if="index!==0&&index!==floor1.length-1" :src="item.image" />
+          <img v-if="index!==0" :src="item.image" />
         </div>
       </div>
     </div>
@@ -44,9 +47,6 @@ export default {
 </script>
 
 <style scoped lang='scss'>
-.f-1{
- font-size: 0;
-}
 .num {
   width: 20px;
   height: 20px;
