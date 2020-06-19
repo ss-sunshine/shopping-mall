@@ -1,4 +1,4 @@
-1. 获取首页数据(get)
+﻿1. 获取首页数据(get)
 /recommend
 
 2. 搜索(get)
@@ -18,7 +18,7 @@ id:默认分类的id
 参数:
 count: 购物车数量
 id: 商品id
-mallPrice: 价格
+,价格
 
 6. 购物车商品删除(post)
 /deleteShop
@@ -56,6 +56,7 @@ id:商品的cid
 id:商品的id
 
 12. 加入购物车(post)
+/addShop
 参数:
 id:商品的id
 
@@ -149,6 +150,7 @@ verify:验证码
 /tobeEvaluated
 
 30. 查询单条评论(post)
+/evaluateOne
 参数: 
 id:商品id
 _id:数据库的那条id

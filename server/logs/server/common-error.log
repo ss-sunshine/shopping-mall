@@ -1831,3 +1831,12 @@ name: "MongoError"
 pid: 9412
 hostname: STU008
 
+2020-06-19 08:43:47,222 ERROR 10984 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 10984
+hostname: DESKTOP-B1J1NT4
+
