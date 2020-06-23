@@ -1,0 +1,21 @@
+2020-06-21 11:11:52,473 INFO 5908 [egg-schedule]: register schedule E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-06-21 11:11:52,473 INFO 5908 [egg-schedule]: register schedule E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-06-21 11:11:52,474 INFO 5908 [egg-schedule]: register schedule E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-06-21 11:11:53,237 INFO 6928 [egg-schedule]: register schedule E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-06-21 11:11:53,237 INFO 6928 [egg-schedule]: register schedule E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-06-21 11:11:53,237 INFO 6928 [egg-schedule]: register schedule E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-06-21 11:12:06,612 INFO 6032 [Timer] E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 62273391ms at 2020-06-22 04:30:00.003
+2020-06-21 11:12:06,613 INFO 6032 [Timer] E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 46073388ms at 2020-06-22 00:00:00.001
+2020-06-21 11:12:06,613 INFO 6032 [Timer] E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 46074387ms at 2020-06-22 00:00:01.000
+2020-06-21 11:12:07,750 INFO 6060 [egg-schedule]: register schedule E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-06-21 11:12:07,750 INFO 6060 [egg-schedule]: register schedule E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-06-21 11:12:07,750 INFO 6060 [egg-schedule]: register schedule E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-06-21 11:12:09,806 INFO 9788 [egg-schedule]: register schedule E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-multipart@2.10.3@egg-multipart\app\schedule\clean_tmpdir.js
+2020-06-21 11:12:09,806 INFO 9788 [egg-schedule]: register schedule E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js
+2020-06-21 11:12:09,806 INFO 9788 [egg-schedule]: register schedule E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js
+2020-06-22 00:00:02,218 INFO 9788 [Job#1592755202194484151778882001] E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js executing by app
+2020-06-22 00:00:02,286 INFO 9788 [Job#1592755202194484151778882001] E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js execute succeed, used 64ms
+2020-06-22 00:00:02,204 INFO 6032 [Timer] E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\clean_log.js next time will execute after 86397802ms at 2020-06-23 00:00:00.006
+2020-06-22 00:00:03,196 INFO 6032 [Timer] E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 86397809ms at 2020-06-23 00:00:01.005
+2020-06-22 00:00:03,192 INFO 9788 [Job#1592755203190484161734002991] E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js executing by app
+2020-06-22 00:00:03,207 INFO 9788 [Job#1592755203190484161734002991] E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-logrotator@3.1.0@egg-logrotator\app\schedule\rotate_by_file.js execute succeed, used 15ms
