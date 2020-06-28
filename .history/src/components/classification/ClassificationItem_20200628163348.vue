@@ -11,25 +11,26 @@
       </div>
       <div class="right">
         <div v-if="classification.length>0">
-          <van-tabs v-model="active" @click="onClick" sticky :ellipsis='false'>
+          <van-tabs v-model="active" @click="onClick">
             <van-tab
               v-for="(item,index) in classification[num].bxMallSubDto"
               :key="index"
               :title="item.mallSubName"
             >
-              <van-cell-group v-for="(item1,index1) in bxMallSubDtoItem" :key="index1">
-                <van-card :title="item1.name" @click-thumb="detail(item1, index1)">
-                  <template #thumb>
-                    <img :src="item1.image" />
-                  </template>
-                  <template #price>
-                    <div class="m-t-2">
-                        <span class="price f14 f-w-7 m-r-1">￥{{item1.present_price}}</span>
-                    <span class="f14 text-line">￥{{item1.present_price}}</span>
-                    </div>
-                  </template>
-                </van-card>
-              </van-cell-group>
+              <div class="wrapper" ref="wrapper">
+                <div class="content">
+                  <van-cell-group v-for="(item1,index1) in bxMallSubDtoItem" :key="index1">
+                    <van-card :title="item1.name" @click-thumb="detail(item1, index1)">
+                      <template #thumb>
+                        <img :src="item1.image" />
+                      </template>
+                      <template #price>
+                        <div class="price f14 f-w-7">￥{{item1.present_price}}</div>
+                      </template>
+                    </van-card>
+                  </van-cell-group>
+                </div>
+              </div>
             </van-tab>
           </van-tabs>
         </div>
@@ -115,6 +116,9 @@ export default {
     }
   },
   mounted() {
+    new BScroll(this.$refs.wrapper, {
+      click: true
+    });
     this.classification = JSON.parse(localStorage.getItem("classification"));
     this.num = this.$route.query.index;
     // this.bxMallSubDto = this.classification[this.num].bxMallSubDto;
@@ -127,45 +131,38 @@ export default {
 </script>
 
 <style scoped lang='scss'>
+.wrapper {
+  // margin-top: 45px;
+  // height: 100vh;
+  height: calc(100vh - 46px);
+  overflow: hidden; //超出部分隐藏
+  background: white;
+}
+// .van-tab__text--ellipsis{
+
+// }
 .van-sidebar-item {
-  height: 44px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.van-tabs {
-    position: relative;
-    margin-top: 41px;
-    margin-bottom: 50px;
 }
 .title {
   height: 40px;
   background: white;
   border-bottom: 1px solid rgb(246, 246, 246);
-  position: fixed;
-  width: 100%;
-  z-index: 99;
 }
 .left {
-    padding-top: 41px;
-    position: fixed;
-    height: 100vh;
-    // z-index: 0;
-//   height: 100vh;
+  height: 100vh;
   background: rgb(247, 248, 250);
 }
 .right {
-  width: calc(100vw - 85px);
-  margin-left: 85px;
+  width: 100vw;
   background: white;
-}
-.van-card__content{
-    justify-content: start;
 }
 .van-card {
   background: white;
   font-size: 14px;
-  color: red;
 }
 .van-card__thumb img {
   border-radius: 0;

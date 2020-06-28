@@ -1,6 +1,8 @@
 <template>
   <div>
+      <van-sticky :offset-top="0">
     <div class="title f-a-j">商品分类</div>
+    </van-sticky>
     <div class="d-f">
       <div class="left">
         <van-sidebar v-model="num">

@@ -11,7 +11,7 @@
       </div>
       <div class="right">
         <div v-if="classification.length>0">
-          <van-tabs v-model="active" @click="onClick" sticky :ellipsis='false'>
+          <van-tabs v-model="active" @click="onClick">
             <van-tab
               v-for="(item,index) in classification[num].bxMallSubDto"
               :key="index"
@@ -23,10 +23,8 @@
                     <img :src="item1.image" />
                   </template>
                   <template #price>
-                    <div class="m-t-2">
-                        <span class="price f14 f-w-7 m-r-1">￥{{item1.present_price}}</span>
-                    <span class="f14 text-line">￥{{item1.present_price}}</span>
-                    </div>
+                    <span class="price f14 f-w-7 m-t-2">￥{{item1.present_price}}</span>
+                    <span class="f14 m-t-2 text-line">￥{{item1.present_price}}</span>
                   </template>
                 </van-card>
               </van-cell-group>

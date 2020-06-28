@@ -16,6 +16,7 @@
               v-for="(item,index) in classification[num].bxMallSubDto"
               :key="index"
               :title="item.mallSubName"
+              :offset-top="40"
             >
               <van-cell-group v-for="(item1,index1) in bxMallSubDtoItem" :key="index1">
                 <van-card :title="item1.name" @click-thumb="detail(item1, index1)">

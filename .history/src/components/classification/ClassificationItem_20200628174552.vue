@@ -152,7 +152,7 @@ export default {
     height: 100vh;
     // z-index: 0;
 //   height: 100vh;
-  background: rgb(247, 248, 250);
+  background: rgb(241,248,255);
 }
 .right {
   width: calc(100vw - 85px);

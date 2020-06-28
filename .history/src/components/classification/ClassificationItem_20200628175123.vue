@@ -11,7 +11,7 @@
       </div>
       <div class="right">
         <div v-if="classification.length>0">
-          <van-tabs v-model="active" @click="onClick" sticky :ellipsis='false'>
+          <van-tabs v-model="active" @click="onClick" sticky :offset-top="41" :ellipsis='false'>
             <van-tab
               v-for="(item,index) in classification[num].bxMallSubDto"
               :key="index"

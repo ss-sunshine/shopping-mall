@@ -17,6 +17,8 @@
               :key="index"
               :title="item.mallSubName"
             >
+            <div class="wrapper" ref="wrapper">
+      <div class="content">
               <van-cell-group v-for="(item1,index1) in bxMallSubDtoItem" :key="index1">
                 <van-card :title="item1.name" @click-thumb="detail(item1, index1)">
                   <template #thumb>
@@ -30,6 +32,8 @@
                   </template>
                 </van-card>
               </van-cell-group>
+              </div>
+    </div>
             </van-tab>
           </van-tabs>
         </div>
@@ -115,6 +119,9 @@ export default {
     }
   },
   mounted() {
+      new BScroll(this.$refs.wrapper, {
+      click: true
+    });
     this.classification = JSON.parse(localStorage.getItem("classification"));
     this.num = this.$route.query.index;
     // this.bxMallSubDto = this.classification[this.num].bxMallSubDto;
