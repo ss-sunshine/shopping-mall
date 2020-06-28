@@ -3,33 +3,23 @@
     <div class="title f-a-j">商品分类</div>
     <div class="d-f">
       <div class="left">
-        <van-sidebar v-model="num">
+        <van-sidebar v-model="num" @click="onClick(name, title)">
           <div v-for="(item,index) in classification" :key="index">
             <van-sidebar-item :title="item.mallCategoryName" @click="OnChange(item,index)" />
           </div>
         </van-sidebar>
       </div>
       <div class="right">
-        <div v-if="classification.length>0">
-          <van-tabs v-model="active" @click="onClick">
-            <van-tab
-              v-for="(item,index) in classification[num].bxMallSubDto"
-              :key="index"
-              :title="item.mallSubName"
-            >
-              <van-cell-group v-for="(item1,index1) in bxMallSubDtoItem" :key="index1">
-                <van-card :title="item1.name" @click-thumb="detail(item1, index1)">
-                  <template #thumb>
-                    <img :src="item1.image" />
-                  </template>
-                  <template #price>
-                    <div class="price f14 f-w-7">￥{{item1.present_price}}</div>
-                  </template>
-                </van-card>
-              </van-cell-group>
-            </van-tab>
-          </van-tabs>
-        </div>
+        <!-- <div v-if="classification.length>0"> -->
+        <van-tabs v-model="active">
+          <van-tab
+            v-for="(item,index) in bxMallSubDto"
+            :key="index"
+            :title="item.mallSubName"
+            ellipsis="false"
+          >内容 {{ index }}</van-tab>
+        </van-tabs>
+        <!-- </div> -->
       </div>
     </div>
   </div>
@@ -51,21 +41,8 @@ export default {
     };
   },
   methods: {
-    detail(item1, index1) {
-      this.$router.push({ path: "/detail", query: { id: item1.id } });
-    },
     onClick(name, title) {
-      //   console.log(name);
-      let id = this.classification[this.num].bxMallSubDto[name].mallSubId;
-      this.$api
-        .getClassification(id)
-        .then(res => {
-          console.log(res);
-          this.bxMallSubDtoItem = res.dataList;
-        })
-        .catch(err => {
-          console.log(err);
-        });
+      console.log(name);
     },
     OnChange(item, index) {
       this.active = 0;
@@ -86,6 +63,7 @@ export default {
       //如果是从首页过来的那么它发请求就要改变他的这个categorydata[this.aIndex]
       if (!this.$route.query.index) {
         this.num = 0;
+        this.bxMallSubDto = this.classification[0].bxMallSubDto;
         let id = this.classification[0].bxMallSubDto[0].mallSubId;
         this.$api
           .getClassification(id)
@@ -97,6 +75,7 @@ export default {
             console.log(err);
           });
       } else {
+          this.bxMallSubDto = this.classification[this.num].bxMallSubDto;
         let id = this.classification[this.num].bxMallSubDto[0].mallSubId;
         this.$api
           .getClassification(id)
@@ -123,45 +102,16 @@ export default {
 </script>
 
 <style scoped lang='scss'>
-// .van-tab__text--ellipsis{
-    
-// }
-.van-sidebar-item {
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .title {
   height: 40px;
   background: white;
   border-bottom: 1px solid rgb(246, 246, 246);
 }
 .left {
-  height: 100vh;
+  height: calc(100vh - 41px);
   background: rgb(247, 248, 250);
 }
 .right {
   width: 100vw;
-  background: white;
-}
-.van-card {
-  background: white;
-  font-size: 14px;
-}
-.van-card__thumb img {
-  border-radius: 0;
-}
-img {
-  border: 1px solid rgb(230, 230, 230);
-  width: 80px;
-  height: 80px;
-}
-.price {
-  color: rgb(255, 0, 0);
-}
-.no {
-  color: rgb(200, 200, 200);
-  letter-spacing: 3px;
 }
 </style>

@@ -11,7 +11,7 @@
       </div>
       <div class="right">
         <div v-if="classification.length>0">
-          <van-tabs v-model="active" @click="onClick">
+          <van-tabs v-model="active" animated @click="onClick">
             <van-tab
               v-for="(item,index) in classification[num].bxMallSubDto"
               :key="index"
@@ -52,7 +52,7 @@ export default {
   },
   methods: {
     detail(item1, index1) {
-      this.$router.push({ path: "/detail", query: { id: item1.id } });
+      this.$router.push({ path: "/detail", query: { id: item1.cid } });
     },
     onClick(name, title) {
       //   console.log(name);

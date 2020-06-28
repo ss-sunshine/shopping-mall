@@ -17,6 +17,7 @@
               :key="index"
               :title="item.mallSubName"
             >
+             <template #title>{{item.mallSubName}}</template>
               <van-cell-group v-for="(item1,index1) in bxMallSubDtoItem" :key="index1">
                 <van-card :title="item1.name" @click-thumb="detail(item1, index1)">
                   <template #thumb>
@@ -52,7 +53,7 @@ export default {
   },
   methods: {
     detail(item1, index1) {
-      this.$router.push({ path: "/detail", query: { id: item1.id } });
+      this.$router.push({ path: "/detail", query: { id: item1.cid } });
     },
     onClick(name, title) {
       //   console.log(name);

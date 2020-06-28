@@ -10,26 +10,27 @@
         </van-sidebar>
       </div>
       <div class="right">
-        <div v-if="classification.length>0">
-          <van-tabs v-model="active" @click="onClick">
-            <van-tab
-              v-for="(item,index) in classification[num].bxMallSubDto"
-              :key="index"
-              :title="item.mallSubName"
-            >
-              <van-cell-group v-for="(item1,index1) in bxMallSubDtoItem" :key="index1">
-                <van-card :title="item1.name" @click-thumb="detail(item1, index1)">
-                  <template #thumb>
-                    <img :src="item1.image" />
-                  </template>
-                  <template #price>
-                    <div class="price f14 f-w-7">￥{{item1.present_price}}</div>
-                  </template>
-                </van-card>
-              </van-cell-group>
-            </van-tab>
-          </van-tabs>
-        </div>
+        <!-- <div v-if="classification.length>0"> -->
+        <van-tabs v-model="active" @click="onClick(name, title)">
+          <van-tab
+            v-for="(item,index) in classification[num].bxMallSubDto"
+            :key="index"
+            :title="item.mallSubName"
+            ellipsis="false"
+          >
+                <van-cell-group v-for="(item1,index1) in bxMallSubDtoItem" :key="index1">
+                  <van-card :title="item1.name" @click-thumb="detail(item1, index1)">
+                    <template #thumb>
+                      <img :src="item1.image" />
+                    </template>
+                    <template #price>
+                      <div class="price f14 f-w-7">￥{{item1.present_price}}</div>
+                    </template>
+                  </van-card>
+                </van-cell-group>
+          </van-tab>
+        </van-tabs>
+        <!-- </div> -->
       </div>
     </div>
   </div>
@@ -52,7 +53,7 @@ export default {
   },
   methods: {
     detail(item1, index1) {
-      this.$router.push({ path: "/detail", query: { id: item1.id } });
+      this.$router.push({ path: "/detail", query: { id: item1.cid } });
     },
     onClick(name, title) {
       //   console.log(name);
@@ -123,22 +124,13 @@ export default {
 </script>
 
 <style scoped lang='scss'>
-// .van-tab__text--ellipsis{
-    
-// }
-.van-sidebar-item {
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .title {
   height: 40px;
   background: white;
   border-bottom: 1px solid rgb(246, 246, 246);
 }
 .left {
-  height: 100vh;
+  height: calc(100vh - 41px);
   background: rgb(247, 248, 250);
 }
 .right {

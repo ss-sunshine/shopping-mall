@@ -52,7 +52,7 @@ export default {
   },
   methods: {
     detail(item1, index1) {
-      this.$router.push({ path: "/detail", query: { id: item1.id } });
+      this.$router.push({ path: "/detail", query: { id: item1.cid } });
     },
     onClick(name, title) {
       //   console.log(name);
