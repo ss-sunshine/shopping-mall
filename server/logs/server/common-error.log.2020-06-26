@@ -1,0 +1,86 @@
+2020-06-26 16:12:52,874 ERROR 9352 [-/127.0.0.1/-/28ms POST /v1/address] nodejs.ValidationError: Address validation failed: isDefault: Cast to Boolean failed for value "" at path "isDefault"
+    at model.Document.invalidate (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\document.js:2574:32)
+    at model.$set (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\document.js:1246:12)
+    at model._handleIndex (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\document.js:979:14)
+    at model.$set (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\document.js:920:22)
+    at model.Document (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\document.js:139:12)
+    at model.Model (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\model.js:107:12)
+    at new model (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\model.js:4706:15)
+    at OperatingGoodsController.address (E:\web前端\项目练习\shopping-mall\server\app\controller\api\operatingGoods.js:130:29)
+    at Object.callFn (E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-core@4.17.4@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-core@4.17.4@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\web前端\项目练习\shopping-mall\server\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\web前端\项目练习\shopping-mall\server\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\web前端\项目练习\shopping-mall\server\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (E:\web前端\项目练习\shopping-mall\server\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at E:\web前端\项目练习\shopping-mall\server\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\web前端\项目练习\shopping-mall\server\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+errors: {"isDefault":{"stringValue":"\"\"","kind":"Boolean","value":"","path":"isDefault","reason":{"stringValue":"\"\"","kind":"boolean","value":""}}}
+_message: "Address validation failed"
+pid: 9352
+hostname: DESKTOP-B1J1NT4
+
+2020-06-26 16:12:56,934 ERROR 9352 [-/127.0.0.1/-/2ms POST /v1/address] nodejs.ValidationError: Address validation failed: isDefault: Cast to Boolean failed for value "" at path "isDefault"
+    at model.Document.invalidate (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\document.js:2574:32)
+    at model.$set (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\document.js:1246:12)
+    at model._handleIndex (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\document.js:979:14)
+    at model.$set (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\document.js:920:22)
+    at model.Document (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\document.js:139:12)
+    at model.Model (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\model.js:107:12)
+    at new model (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\model.js:4706:15)
+    at OperatingGoodsController.address (E:\web前端\项目练习\shopping-mall\server\app\controller\api\operatingGoods.js:130:29)
+    at Object.callFn (E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-core@4.17.4@egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (E:\web前端\项目练习\shopping-mall\server\node_modules\_egg-core@4.17.4@egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (E:\web前端\项目练习\shopping-mall\server\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (E:\web前端\项目练习\shopping-mall\server\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (E:\web前端\项目练习\shopping-mall\server\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (E:\web前端\项目练习\shopping-mall\server\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at E:\web前端\项目练习\shopping-mall\server\node_modules\_@eggjs_router@2.0.0@@eggjs\router\lib\router.js:190:18
+    at dispatch (E:\web前端\项目练习\shopping-mall\server\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+errors: {"isDefault":{"stringValue":"\"\"","kind":"Boolean","value":"","path":"isDefault","reason":{"stringValue":"\"\"","kind":"boolean","value":""}}}
+_message: "Address validation failed"
+pid: 9352
+hostname: DESKTOP-B1J1NT4
+
+2020-06-26 19:31:47,174 ERROR 9352 [-/127.0.0.1/-/3ms POST /v1/deleteAddress] nodejs.CastError: Cast to ObjectId failed for value "14" at path "_id" for model "Address"
+    at model.Query.exec (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4351:21)
+    at model.Query.Query.then (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4443:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+messageFormat: undefined
+stringValue: "\"14\""
+kind: "ObjectId"
+value: 14
+path: "_id"
+reason: {}
+pid: 9352
+hostname: DESKTOP-B1J1NT4
+
+2020-06-26 19:32:03,914 ERROR 9352 [-/127.0.0.1/-/1ms POST /v1/deleteAddress] nodejs.CastError: Cast to ObjectId failed for value "{ id: '14' }" at path "_id" for model "Address"
+    at model.Query.exec (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4351:21)
+    at model.Query.Query.then (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4443:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+messageFormat: undefined
+stringValue: "\"{ id: '14' }\""
+kind: "ObjectId"
+value: {"id":"14"}
+path: "_id"
+reason: {}
+pid: 9352
+hostname: DESKTOP-B1J1NT4
+
+2020-06-26 19:33:14,702 ERROR 9352 [-/127.0.0.1/-/1ms POST /v1/deleteAddress] nodejs.CastError: Cast to ObjectId failed for value "14" at path "_id" for model "Address"
+    at model.Query.exec (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4351:21)
+    at model.Query.Query.then (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4443:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+messageFormat: undefined
+stringValue: "\"14\""
+kind: "ObjectId"
+value: "14"
+path: "_id"
+reason: {}
+pid: 9352
+hostname: DESKTOP-B1J1NT4
+

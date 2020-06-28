@@ -1,0 +1,140 @@
+2020-06-25 16:07:27,138 ERROR 348 [-/127.0.0.1/-/9ms POST /v1/saveUser] nodejs.CastError: Cast to ObjectId failed for value "" at path "_id" for model "User"
+    at model.Query.exec (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4351:21)
+    at model.Query.Query.then (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4443:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+messageFormat: undefined
+stringValue: "\"\""
+kind: "ObjectId"
+value: ""
+path: "_id"
+reason: {}
+pid: 348
+hostname: DESKTOP-B1J1NT4
+
+2020-06-25 16:07:51,450 ERROR 348 [-/127.0.0.1/-/5ms POST /v1/saveUser] nodejs.CastError: Cast to string failed for value "{ gender: '男', year: '', month: '', day: '', id: '' }" at path "gender"
+    at model.Query.exec (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4351:21)
+    at model.Query.Query.then (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4443:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+messageFormat: undefined
+stringValue: "\"{ gender: '男', year: '', month: '', day: '', id: '' }\""
+kind: "string"
+value: {"gender":"男","year":"","month":"","day":"","id":""}
+path: "gender"
+reason: null
+pid: 348
+hostname: DESKTOP-B1J1NT4
+
+2020-06-25 16:08:57,877 ERROR 348 [-/127.0.0.1/-/4ms POST /v1/saveUser] nodejs.CastError: Cast to string failed for value "{ gender: '男', year: '', month: '', day: '', id: '' }" at path "gender"
+    at model.Query.exec (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4351:21)
+    at model.Query.Query.then (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4443:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+messageFormat: undefined
+stringValue: "\"{ gender: '男', year: '', month: '', day: '', id: '' }\""
+kind: "string"
+value: {"gender":"男","year":"","month":"","day":"","id":""}
+path: "gender"
+reason: null
+pid: 348
+hostname: DESKTOP-B1J1NT4
+
+2020-06-25 16:55:31,356 ERROR 348 [-/127.0.0.1/-/4ms POST /v1/saveUser] nodejs.CastError: Cast to ObjectId failed for value "" at path "_id" for model "User"
+    at model.Query.exec (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4351:21)
+    at model.Query.Query.then (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4443:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+messageFormat: undefined
+stringValue: "\"\""
+kind: "ObjectId"
+value: ""
+path: "_id"
+reason: {}
+pid: 348
+hostname: DESKTOP-B1J1NT4
+
+2020-06-25 16:56:37,399 ERROR 348 [-/127.0.0.1/-/2ms POST /v1/saveUser] nodejs.CastError: Cast to string failed for value "{ gender: '女', year: 2020, month: 6, day: 20, id: '' }" at path "gender"
+    at model.Query.exec (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4351:21)
+    at model.Query.Query.then (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4443:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+messageFormat: undefined
+stringValue: "\"{ gender: '女', year: 2020, month: 6, day: 20, id: '' }\""
+kind: "string"
+value: {"gender":"女","year":2020,"month":6,"day":20,"id":""}
+path: "gender"
+reason: null
+pid: 348
+hostname: DESKTOP-B1J1NT4
+
+2020-06-25 17:02:39,323 ERROR 348 [-/127.0.0.1/-/3ms POST /v1/saveUser] nodejs.CastError: Cast to ObjectId failed for value "20" at path "_id" for model "User"
+    at model.Query.exec (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4351:21)
+    at model.Query.Query.then (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4443:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+messageFormat: undefined
+stringValue: "\"20\""
+kind: "ObjectId"
+value: 20
+path: "_id"
+reason: {}
+pid: 348
+hostname: DESKTOP-B1J1NT4
+
+2020-06-25 17:06:23,752 ERROR 348 [-/127.0.0.1/-/3ms POST /v1/saveUser] nodejs.CastError: Cast to ObjectId failed for value "20" at path "_id" for model "User"
+    at model.Query.exec (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4351:21)
+    at model.Query.Query.then (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4443:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+messageFormat: undefined
+stringValue: "\"20\""
+kind: "ObjectId"
+value: 20
+path: "_id"
+reason: {}
+pid: 348
+hostname: DESKTOP-B1J1NT4
+
+2020-06-25 17:08:30,254 ERROR 348 [-/127.0.0.1/-/2ms POST /v1/saveUser] nodejs.CastError: Cast to ObjectId failed for value "20" at path "_id" for model "User"
+    at model.Query.exec (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4351:21)
+    at model.Query.Query.then (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4443:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+messageFormat: undefined
+stringValue: "\"20\""
+kind: "ObjectId"
+value: 20
+path: "_id"
+reason: {}
+pid: 348
+hostname: DESKTOP-B1J1NT4
+
+2020-06-25 17:08:32,417 ERROR 348 [-/127.0.0.1/-/5ms POST /v1/saveUser] nodejs.CastError: Cast to ObjectId failed for value "20" at path "_id" for model "User"
+    at model.Query.exec (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4351:21)
+    at model.Query.Query.then (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4443:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+messageFormat: undefined
+stringValue: "\"20\""
+kind: "ObjectId"
+value: 20
+path: "_id"
+reason: {}
+pid: 348
+hostname: DESKTOP-B1J1NT4
+
+2020-06-25 17:17:01,922 ERROR 348 [-/127.0.0.1/-/2ms POST /v1/saveUser] nodejs.CastError: Cast to ObjectId failed for value "" at path "_id" for model "User"
+    at model.Query.exec (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4351:21)
+    at model.Query.Query.then (E:\web前端\项目练习\shopping-mall\server\node_modules\_mongoose@5.9.19@mongoose\lib\query.js:4443:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+messageFormat: undefined
+stringValue: "\"\""
+kind: "ObjectId"
+value: ""
+path: "_id"
+reason: {}
+pid: 348
+hostname: DESKTOP-B1J1NT4
+

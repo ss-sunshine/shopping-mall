@@ -1,0 +1,9 @@
+2020-06-27 22:44:18,249 ERROR 5820 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:205:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 5820
+hostname: DESKTOP-B1J1NT4
+

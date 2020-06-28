@@ -1,0 +1,79 @@
+<template>
+  <div>
+    <top>
+      <template v-slot:title>地址列表</template>
+    </top>
+    <van-address-list
+      v-model="chosenAddressId"
+      :list="list"
+      default-tag-text="默认"
+      @add="onAdd"
+      @edit="onEdit"
+    />
+    <van-address-edit
+  :area-list="areaList"
+  show-postal
+  show-delete
+  show-set-default
+  show-search-result
+  :search-result="searchResult"
+  :area-columns-placeholder="['请选择', '请选择', '请选择']"
+  @save="onSave"
+  @delete="onDelete"
+  @change-detail="onChangeDetail"
+/>
+  </div>
+</template>
+
+<script>
+import { Toast } from 'vant';
+import Top from "../top/Top";
+export default {
+  name: "AddressItem",
+  props: {},
+  components: {
+    Top
+  },
+  data() {
+    return {
+       chosenAddressId: '1',
+      list: [
+        {
+          id: '1',
+          name: '张三',
+          tel: '13000000000',
+          address: '浙江省杭州市西湖区文三路 138 号东方通信大厦 7 楼 501 室',
+          isDefault: true,
+        },
+        {
+          id: '2',
+          name: '李四',
+          tel: '1310000000',
+          address: '浙江省杭州市拱墅区莫干山路 50 号',
+        },
+      ],
+    };
+  },
+  methods: {
+    onAdd() {
+      Toast('新增地址');
+    },
+    onEdit(item, index) {
+      Toast('编辑地址:' + index);
+    },
+  },
+  mounted() {
+    // 查询用户收货地址
+    // this.$api.getGetAddress().then(res=>{
+    //   console.log(res);
+    // }).catch(err=>{
+    //   console.log(err);
+    // })
+  },
+  watch: {},
+  computed: {}
+};
+</script>
+
+<style scoped lang='scss'>
+</style>
