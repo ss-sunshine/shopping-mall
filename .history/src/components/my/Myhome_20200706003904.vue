@@ -178,7 +178,7 @@ export default {
     } else {
       this.show = true;
       //   this.name=""
-      this.text = "登录/注册";
+      this.text = "请登录";
     }
   },
   watch: {},

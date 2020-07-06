@@ -170,7 +170,7 @@ export default {
     let personal = JSON.parse(localStorage.getItem("personal"));
     let user = JSON.parse(sessionStorage.getItem("user"));
     // console.log(user);
-    if (user !== null) {
+    if (user !== '') {
       this.flag = true;
       this.name = personal.nickname;
       this.text = "退出登录";
@@ -178,7 +178,7 @@ export default {
     } else {
       this.show = true;
       //   this.name=""
-      this.text = "登录/注册";
+      this.text = "请登录";
     }
   },
   watch: {},
